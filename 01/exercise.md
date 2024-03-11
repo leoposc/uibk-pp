@@ -56,3 +56,6 @@ Slurm will set the environment variable $SLURM_NTASKS to the number ntasks that 
 `--time=time`
 
 
+## Exercise 2
+
+![diagram](./diagram-1.png)
