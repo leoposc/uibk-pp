@@ -59,3 +59,6 @@ Slurm will set the environment variable $SLURM_NTASKS to the number ntasks that 
 ## Exercise 2
 
 ![diagram](./diagram-1.png)
+
+- Compiler optimizations flags do not show huge performance improvements, especially because it fluctuats between the different number of ranks.
+- Results are similar when executing multiple times.
