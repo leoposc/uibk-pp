@@ -1,0 +1,27 @@
+CPUs and Cores:
+
+The output doesn't definitively state the number of CPUs due to potential hyperthreading.
+There are 12 cores listed.
+If hyperthreading is enabled, this could indicate 6 physical CPUs with 2 logical cores each.
+
+Memory Hierarchy (NUMA):
+
+Two NUMA nodes are present (`NUMANode L#0 P#0` and `NUMANode L#1 P#1`).
+Each NUMA node has 31GB of local memory, totaling 62GB for the entire machine.
+NUMA architecture means memory access times can vary depending on the location of the memory and the CPU accessing it.
+Processes running on cores that access memory from a different NUMA node might experience higher latency compared to accessing local memory.
+
+Caches:
+
+The output shows L1d (data cache), L1i (instruction cache), L2, and L3 cache details for each core.
+Cache sizes are provided (e.g., "12MB" for L3 cache).
+This information is crucial for optimizing applications to utilize the cache effectively. Ideally, frequently accessed data should fit in the faster, smaller caches (L1 and L2).
+
+Other Information:
+
+PCI entries reveal details about network interfaces (e.g., `eno1`, `eno2`, `enp25s0f0`, and `enp25s0f1`) and potentially storage controllers.
+The presence of `sda` suggests a storage device (disk)..
+
+Compare your observations to the LCC3 documentation and CPU documentation. Do your observations match the documentation?
+
+My observation match the documentation.

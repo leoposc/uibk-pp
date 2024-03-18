@@ -1,0 +1,57 @@
+formula for speedup (S):
+
+S = T_sequential / T_parallel
+
+Where:
+
+S: Speedup of the parallel program
+T_sequential: Execution time of the best sequential algorithm for the problem
+T_parallel: Execution time of the parallel algorithm on a specific number of processors
+Interpretation:
+
+A speedup  of 1 means the parallel program takes just as long as the sequential program.
+A speedup greater than 1 indicates that the parallel program is faster than the sequential program. The higher the speedup, the more significant the performance improvement achieved through parallelization.
+In practice, there are limitations to achieving perfect speedup due to factors like overhead from managing multiple threads, communication between processors, and inherent sequential portions of the program that cannot be parallelized. This is where Amdahl's Law comes into play, which defines a theoretical upper bound on speedup based on the inherent sequential portion of the program.
+
+Amdahl's law is a formula that sets a theoretical limit on the speedup achievable by parallelizing a program. The potential performance gains from parallelization are ultimately limited by the inherent sequential portion of the program that cannot be parallelized / be executed faster by using more processors.
+
+Amdahl's Law:
+Speedup = 1 / ( (1 - p) + (p / n) )
+
+Speedup: The improvement in execution time achieved by the parallel program compared to the sequential program.
+p: The proportion of the program that can be parallelized (expressed as a decimal between 0 and 1).
+n: The number of processors used in the parallel execution.
+
+Relationship Described:
+Amdahl's Law describes an inverse relationship between the speedup and the inherent sequential portion (1-p) of the program. As the proportion of parallelizable code (p) increases, the potential speedup also increases, but it's ultimately limited by the remaining sequential portion. Additionally, increasing the number of processors (n) can provide some benefit, but the gains become smaller when the number of processors grows very large.
+
+Significance:
+Amdahl's Law is significant because it provides a realistic perspective on the potential benefits of parallelization. It helps developers understand that:
+-Not all programs benefit equally from parallelization
+-There's a diminishing return on adding processors: While adding more processors can improve performance, the gains become smaller as the number of processors increases. Reaching the theoretical speedup limit becomes increasingly difficult with more processors due to factors like communication overhead and synchronization between processors.
+
+By understanding Amdahl's Law, developers can make informed decisions when and how to parallelize programs. It helps to focus on optimizing the parallelizable portions of the code and avoid unrealistic expectations about the achievable speedup.
+
+
+Compute the theoretical speedup of a program that spends 10% of its time in unparallelizable, sequential regions for 6 cores and for a hypothetically unlimited number of cores.
+
+6 cores:
+1 / ((1 - 0.9) + (0.9 / 6)) = 4
+
+unlimited cores:
+1 / (1 - 0.9) = 10
+
+
+20%:
+
+6cores:
+1 / ((1 - 0.8) + (0.9 / 6)) = 2.857142857142857
+
+unlimited cores:
+1 / (1 - 0.8) = 5
+
+
+Given an algorithm of time complexity O(n^3). How large (in %) can the unparallelizable, sequential region be at most, such that a speedup of 10 can be achieved using 64 cores?
+
+10 = 1 / ((1 - p) + (p / 64))
+p = 0.9143 (9143% parallelizable)
