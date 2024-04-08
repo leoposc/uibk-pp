@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+
 // Include that allows to print result as an image
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
@@ -39,9 +40,14 @@ void calc_mandelbrot(uint8_t image[Y][X]) {
 int main() {
 	uint8_t image[Y][X];
 
+	// benchmarking
+	clock_t start = clock();
 	calc_mandelbrot(image);
 
 	const int channel_nr = 1, stride_bytes = 0;
 	stbi_write_png("mandelbrot.png", X, Y, channel_nr, image, stride_bytes);
+	clock_t end = clock();
+	double time = (double)(end - start) / CLOCKS_PER_SEC;
+	printf("Time: %f\n", time);
 	return EXIT_SUCCESS;
 }
