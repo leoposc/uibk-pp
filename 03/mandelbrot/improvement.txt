@@ -1,0 +1,1 @@
+Parallize the program by splitting the image into multiple smaller "fields". Each field can be assigned to a seperate thread and be computated parrallel.
