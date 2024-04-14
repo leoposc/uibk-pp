@@ -1,0 +1,38 @@
+Benchmarking with 1 threads...
+Approximation of PI took 13.250 seconds with 1 threads - value: 3.1415790800
+
+real    0m13.253s
+user    0m13.174s
+sys     0m0.002s
+----------------------------------------------
+Benchmarking with 2 threads...
+Approximation of PI took 12.807 seconds with 1 threads - value: 3.1415790800
+
+real    0m12.809s
+user    0m12.744s
+sys     0m0.008s
+----------------------------------------------
+Benchmarking with 4 threads...
+Approximation of PI took 13.032 seconds with 1 threads - value: 3.1415790800
+
+real    0m13.034s
+user    0m12.948s
+sys     0m0.004s
+----------------------------------------------
+Benchmarking with 6 threads...
+Approximation of PI took 13.804 seconds with 1 threads - value: 3.1415790800
+
+real    0m13.806s
+user    0m13.745s
+sys     0m0.002s
+----------------------------------------------
+Benchmarking with 12 threads...
+Approximation of PI took 12.674 seconds with 1 threads - value: 3.1415790800
+
+real    0m12.676s
+user    0m12.476s
+sys     0m0.073s
+----------------------------------------------
+
+
+there is no real difference between the execution times. So the program is not parallized.
