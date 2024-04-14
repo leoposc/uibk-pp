@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -Wextra -Wpedantic -Werror -std=c17 -O3 -march=native -g
+CFLAGS=-Wall -Wextra -Wpedantic -Werror -std=c17 -O3 -march=native -g -fopenmp 
 LDFLAGS=-lpthread
 
 TARGETS=mc_pi_pthreads
