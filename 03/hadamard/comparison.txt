@@ -1,0 +1,3 @@
+fast: Both tools indicate that there are cache misses occurring in the Last Level Cache (LLC), with perf reporting a total of 5,093 LLC load misses and 5,056 LLC store misses.
+
+slow:
