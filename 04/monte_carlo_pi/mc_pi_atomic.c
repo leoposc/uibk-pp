@@ -15,7 +15,6 @@ struct MonteCarloPiInput {
 	uint32_t id;
 };
 
-static void* monte_carlo_pi(void* arg);
 static timepoint_t time_ns();
 static double elapsed_seconds(timepoint_t start, timepoint_t end);
 
@@ -30,9 +29,6 @@ int main(int argc, char** argv) {
 	const uint32_t num_threads = (requested_threads < 1) ? 1 : (uint32_t)requested_threads;
 
 	const count_t total_iterations = ((count_t)700) * 1000 * 1000;
-	const count_t per_thread_iterations = total_iterations / num_threads;
-
-	bool simulation_success = true;
 
 	// start time measurement
 	timepoint_t start = time_ns();
