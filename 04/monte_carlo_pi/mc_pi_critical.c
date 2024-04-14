@@ -38,7 +38,6 @@ int main(int argc, char** argv) {
 #pragma omp parallel num_threads(num_threads)
 	{
 		unsigned int seed = START_SEED + omp_get_thread_num();
-		count_t private_points_in_circle = 0;
 
 #pragma omp for
 		for(count_t i = 0; i < total_iterations; ++i) {
@@ -46,12 +45,10 @@ int main(int argc, char** argv) {
 			float y = (rand_r(&seed) / (float)RAND_MAX);
 
 			if(x * x + y * y <= 1.0f) {
-				private_points_in_circle++;
+#pragma omp critical
+				points_in_circle++;
 			}
 		}
-
-#pragma omp critical(add_points)
-		points_in_circle += private_points_in_circle;
 	}
 
 	double pi_approximation = 4.0 * (points_in_circle / (double)total_iterations);

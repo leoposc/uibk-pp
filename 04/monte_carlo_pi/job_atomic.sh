@@ -7,7 +7,6 @@ threads=(1 2 4 6 12)
 for t in "${threads[@]}"
 do
     echo "Benchmarking mc_pi_atomic with $t threads..."
-    export OMP_NUM_THREADS=$t
-    time ./mc_pi_atomic
+    time ./mc_pi_atomic $t
     echo "----------------------------------------------"
 done
