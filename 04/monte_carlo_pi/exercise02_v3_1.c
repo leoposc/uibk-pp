@@ -6,7 +6,7 @@
 #include <time.h>
 
 #define START_SEED 0
-#define PAD 8
+#define PAD 64
 
 typedef uint64_t timepoint_t;
 typedef uint32_t count_t;

@@ -7,7 +7,7 @@
 # Redirect output stream to this file
 #SBATCH --output=output2.log
 # Maximum number of tasks (=processes) to start in total
-#SBATCH --ntasks=1
+#SBATCH --ntasks=12
 # Maximum number of tasks (=processes) to start per node
 #SBATCH --ntasks-per-node=1
 # Enforce exclusive node allocation, do not share with other jobs

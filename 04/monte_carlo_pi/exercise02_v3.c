@@ -6,6 +6,7 @@
 #include <time.h>
 
 #define START_SEED 0
+#define PADDING_SIZE 64
 
 typedef uint64_t timepoint_t;
 typedef uint32_t count_t;
@@ -33,14 +34,14 @@ int main(int argc, char** argv) {
 	// start time measurement
 	timepoint_t start = time_ns();
 
-	count_t points_in_circle_array[num_threads*2];
+	count_t points_in_circle_array[num_threads*PADDING_SIZE];
 	count_t points_in_circle = 0;
 
 
 #pragma omp parallel num_threads(num_threads)
 	{
 		unsigned int seed = START_SEED + omp_get_thread_num();
-		points_in_circle_array[omp_get_thread_num()*2] = 0;
+		points_in_circle_array[omp_get_thread_num()*PADDING_SIZE] = 0;
 
 #pragma omp for
 		for(count_t i = 0; i < total_iterations; ++i) {
@@ -48,12 +49,12 @@ int main(int argc, char** argv) {
 			float y = (rand_r(&seed) / (float)RAND_MAX);
 
 			if(x * x + y * y <= 1.0f) {
-				points_in_circle_array[omp_get_thread_num()*2]++;
+				points_in_circle_array[omp_get_thread_num()*PADDING_SIZE]++;
 			}
 		}
 
 #pragma omp atomic
-		points_in_circle += points_in_circle_array[omp_get_thread_num()*2];
+		points_in_circle += points_in_circle_array[omp_get_thread_num()*PADDING_SIZE];
 	}
 
 	double pi_approximation = 4.0 * (points_in_circle / (double)total_iterations);
