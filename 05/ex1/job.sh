@@ -14,17 +14,19 @@
 #SBATCH --exclusive
 
 # Define the number of threads to benchmark
-ns=(1500)
+ns=(1 2 4 6 12)
 # ns=(100)
 programs=("/ex1" "/ex1_improved")
-# programs=("ex1/ex1_improved")
+# programs=("/ex1_improved")
 # Loop through each number of threads and run the benchmark
 for p in "${programs[@]}"
 do
     for n in "${ns[@]}"
     do
-        echo "Benchmarking $p with $n as problem size..."
-        ./$p $n
+        echo "Benchmarking $p with $n threads..."
+        export OMP_NUM_THREADS=$n
+        ./$p 1500
         echo "----------------------------------------------"
+        echo ;
     done
 done

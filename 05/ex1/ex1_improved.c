@@ -8,12 +8,10 @@
 
 int main(int argc, char **argv) {
 	// handle input
-	printf("argc: %d\n", argc);
 	if (argc != 2) {
 		fprintf(stderr, "Error: usage: %s <n>\n", argv[0]);
 		return EXIT_FAILURE;
 	}
-
 
 	errno = 0;
 	char *str = argv[1];
@@ -36,7 +34,7 @@ int main(int argc, char **argv) {
 	int status = EXIT_FAILURE;
 	int *a = malloc(n * n * sizeof(int));
 	int *b = malloc(n * n * sizeof(int));
-    int *c = calloc(n * n, sizeof(int));
+    int *c = malloc(n * n * sizeof(int));
     status = EXIT_SUCCESS;
 
 	unsigned long res = 0;
@@ -51,8 +49,7 @@ int main(int argc, char **argv) {
 	}
 
 	double start_time = omp_get_wtime();
-#pragma omp parallel default(none) shared(n, a, b, c, res)
-	{
+
 		// matrix multiplication
 #pragma omp parallel for default(none) shared(n, a, b, c)
 		for (long i = 0; i < n; ++i) {
@@ -62,16 +59,14 @@ int main(int argc, char **argv) {
 				}
 			}
 		}
-#pragma omp parallel for reduction (+:res)
-		for (long i = 0; i < n; ++i) {
-			for (long j = 0; j < n; ++j) {
-				res += c[IND(i, j)];
-			}
+
+#pragma omp parallel for reduction (+: res)
+		for (long i = 0; i < n * n; ++i) {
+			res += c[i];
 		}
-	}
 
 	double end_time = omp_get_wtime();
-	printf("res: %lu, time: %2.2f seconds\n", res, end_time - start_time);
+	printf("$!%s: %2.2f seconds, res: %lu\n", argv[0], end_time - start_time, res);
 
 // 	// cleanup
 	free(c);
