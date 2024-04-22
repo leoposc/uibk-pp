@@ -19,7 +19,7 @@ int main() {
           int flag_val = 0;
 
           while (flag_val < 1) {
-             
+    #pragma omp flush(flag)
              flag_val = flag;
 
           }
