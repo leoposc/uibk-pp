@@ -1,5 +1,5 @@
 CC=gcc
-C_FLAGS = -Wall -Wextra -Werror -std=c17 -pedantic -fopenmp
+C_FLAGS = -Wall -Wextra -Werror -std=c17 -pedantic -fopenmp -lm
 
 .PHONY: all test build clean
 

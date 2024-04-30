@@ -4,9 +4,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "exercise01.h"
+#include "exercise02.h"
+#include "exercise03.h"
 #include "../unity/unity.h"
 
 #define A 5
+#define B 3
 
 void setUp(void) {
     // set stuff up here    
@@ -69,15 +72,17 @@ void test_exercise01_02(void) {
 
     f = sqrt(a + A);
 
-    exercise01_03(n, actual_x, actual_y, actual_z, &actual_f);
+    exercise01_02(n, actual_x, actual_y, actual_z, &actual_f);
 
     TEST_ASSERT_EQUAL_INT32_ARRAY(z, actual_z, n);
-    TEST_ASSER_EQUAL_INT32(f, actual_f);
+    TEST_ASSERT_EQUAL_INT32(f, actual_f);
 
     free(actual_x);
     free(actual_y);
+    free(actual_z);
     free(x);
     free(y);
+    free(z);
 }
 
 void test_exercise01_03(void) {
@@ -96,7 +101,7 @@ void test_exercise01_03(void) {
     }
 
     for (int i=0; i < n; i++) {
-        x[i] = y[i] * 2 + A * i;
+        x[i] = y[i] * 2 + B * i;
     }
 
 
@@ -114,10 +119,41 @@ void test_exercise01_03(void) {
     free(y);
 }
 
+void test_exercise03(void) {
+    //test stuff
+    int32_t a[6][4];
+    int32_t actual_a[6][4];
+
+    for (int i=0; i < 6; i++) {
+        for (int j=0; j < 4; j++) {
+            actual_a[i][j] = 3;
+            a[i][j] = 3;
+        }
+    }
+
+    
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 1; j < 4; ++j) {
+            a[i + 2][j - 1] = B * a[i][j] + 4;
+        }
+    }
+
+    exercise03(a);
+
+    for (int i=0; i < 6; i++) {
+        for (int j=0; j < 4; j++) {
+            TEST_ASSERT_EQUAL_INT32(a[i][j], actual_a[i][j]);
+        }
+    }    
+}
+
+
 int main(void) {
     UNITY_BEGIN();
     RUN_TEST(test_exercise01_01);
-    // RUN_TEST(test_exercise01_02);
-    // RUN_TEST(test_exercise01_03);
+    RUN_TEST(test_exercise01_02);
+    RUN_TEST(test_exercise01_03);
+    RUN_TEST(test_exercise02);
+    RUN_TEST(test_exercise03);
     return UNITY_END();
 }
