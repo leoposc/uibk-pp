@@ -1,3 +1,5 @@
+#### Team: Göthert Philipp Robert, Schmid Leopold Julius, Seling Tobias
+
 # Assignment 7
 
 The goal of this assignment is to work with data and control dependencies.
@@ -32,6 +34,8 @@ a[0] = 0;
 }
 ```
 
+The `nowait` key word could work and save us some execution time, if we make sure that the different threads execute the same chunks (schedule: static?) and do not access chunks from other threads (do not modify the index variable of `a`, like e.g. here `a[i-1]`)
+
 ```C
 #pragma omp parallel for
 for (i=1; i<N; i++) {
@@ -49,6 +53,9 @@ for (i=1; i<N; i++) {
 }
 a[0] = x; 
 ```
+
+The variable `f` has to be declared has `firstprivate` or `shared`. Since it is constant and declaring it as such, the compiler will predetermine it as `shared`.
+
 ```C
 sum = 0; 
 #pragma omp parallel for
@@ -72,6 +79,27 @@ for (i=1; i<N; i++) {
 1) Compile the given program [analysis.c](analysis.c) with gcc 12.2.0 (`module load  gcc/12.2.0-gcc-8.5.0-p4pe45v`) and the flags `-O2 -ftree-vectorize -fopt-info-vec-all-internals`.
 2) Examine the output. What information about dependence analysis can you find in the output? Can you identify any information pointing to successful or unsuccessful vectorization? Does the compiler perform any analysis beyond checking for dependencies and semantic correctness? What are your findings?
 
+#### Dependence Analysis:
+
+In some cases, the analysis identifies "bad data dependence" or a "missed" dependency, which suggests that vectorization
+might not be possible due to data dependencies.
+
+#### successful or unsuccessful vectorization:
+
+Indicates when a loop is successfully vectorized (-> What kind of vectorization) and when it fails to vectorize.
+
+#### beyond checking for dependencies and semantic correctness
+
+scalar cycle detection, vectorization factor determination, data reference alignment analysis, and profitability
+estimation
+
+#### Specific Findings:
+
+1) analysis.c:27, vectorization failed due to function calls or unanalyzable data references (printf function call).
+2) analysis.c:22, vectorization failed due to non-affine evolution of offsets and bad data dependencies.
+3) analysis.c:10, vectorization succeeded with a vectorization factor of 4 (vector length), indicating that the loop iterations can be efficiently parallelized.
+
+
 ## Exercise 3 (1 Point)
 
 ### Description
@@ -88,6 +116,9 @@ Investigate the following given code examples along with their task.
         }
     }
     ```
+
+This snippet is easily parallizable, we just have to be careful that we put the `#pragma omp for` between the function definition and the for-loop.
+
 2) Normalize the following loop nest:
     ```C
     for (int i=4; i<=N; i+=9) {
@@ -106,6 +137,9 @@ Investigate the following given code examples along with their task.
         }
     }
     ```
+
+We can not parallize the following loop since it has a true dependency on the previous iteration. The value of A[i+1][j][k-1] depends on the value of A[i][j][k] which is calculated in the previous iteration. The distance vector is 1, 0, -1 and the direction
+vector is (<, =, >) so the loop can not be parallelized.
 
 ## General Notes
 
