@@ -156,13 +156,11 @@ loop.
 
 ```C
 for (int i=0; i<=(N-4) / 9; i++) {
-   for (int j=0; j<=N / 5; j++) {
-    A[i + 4 + 9i] = 0;
-    }
+    A[4 + 9i] = 0;
 }
 ```
 
-###3.
-Yes it does have a true dependence on itself. 
-Distance vector: (1, 0, -1)
+### 3.
+
+Yes it does have a true dependence on itself. Distance vector: (1, 0, -1)
 Directon vector: (<, = , >)
