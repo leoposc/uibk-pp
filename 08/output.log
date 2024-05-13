@@ -1,0 +1,15 @@
+Benchmarking exercise01 with 6 threads...
+$!.//master: 3.136732
+Sum: 1711656320
+----------------------------------------------
+
+Benchmarking exercise01 with 6 threads...
+$!.//master: 11.281270
+Sum: 1711656320
+----------------------------------------------
+
+Benchmarking exercise01 with 6 threads...
+$!.//master: 3.134410
+Sum: 1711656320
+----------------------------------------------
+

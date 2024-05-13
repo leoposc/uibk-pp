@@ -1,0 +1,450 @@
+Benchmarking hadamard_p_static (problem size: 10000) with 1 threads...
+Sum: 0
+$!./hadamard_p_static_10000_1: 0.248657
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 20000) with 1 threads...
+Sum: 0
+$!./hadamard_p_static_20000_1: 1.014979
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 30000) with 1 threads...
+Sum: 0
+$!./hadamard_p_static_30000_1: 2.283731
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 10000) with 2 threads...
+Sum: 0
+$!./hadamard_p_static_10000_2: 0.159457
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 20000) with 2 threads...
+Sum: 0
+$!./hadamard_p_static_20000_2: 0.650252
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 30000) with 2 threads...
+Sum: 0
+$!./hadamard_p_static_30000_2: 1.448899
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 10000) with 4 threads...
+Sum: 0
+$!./hadamard_p_static_10000_4: 0.115564
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 20000) with 4 threads...
+Sum: 0
+$!./hadamard_p_static_20000_4: 0.507747
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 30000) with 4 threads...
+Sum: 0
+$!./hadamard_p_static_30000_4: 1.110829
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 10000) with 6 threads...
+Sum: 0
+$!./hadamard_p_static_10000_6: 0.102815
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 20000) with 6 threads...
+Sum: 0
+$!./hadamard_p_static_20000_6: 0.440626
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 30000) with 6 threads...
+Sum: 0
+$!./hadamard_p_static_30000_6: 0.979477
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 10000) with 12 threads...
+Sum: 0
+$!./hadamard_p_static_10000_12: 0.104650
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 20000) with 12 threads...
+Sum: 0
+$!./hadamard_p_static_20000_12: 0.408858
+----------------------------------------------
+
+Benchmarking hadamard_p_static (problem size: 30000) with 12 threads...
+Sum: 0
+$!./hadamard_p_static_30000_12: 0.839569
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 10000) with 1 threads...
+Sum: 0
+$!./hadamard_serial_10000_1: 0.249045
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 20000) with 1 threads...
+Sum: 0
+$!./hadamard_serial_20000_1: 1.015617
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 30000) with 1 threads...
+Sum: 0
+$!./hadamard_serial_30000_1: 2.313530
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 10000) with 2 threads...
+Sum: 0
+$!./hadamard_serial_10000_2: 0.249541
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 20000) with 2 threads...
+Sum: 0
+$!./hadamard_serial_20000_2: 1.018444
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 30000) with 2 threads...
+Sum: 0
+$!./hadamard_serial_30000_2: 2.301203
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 10000) with 4 threads...
+Sum: 0
+$!./hadamard_serial_10000_4: 0.248917
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 20000) with 4 threads...
+Sum: 0
+$!./hadamard_serial_20000_4: 1.011913
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 30000) with 4 threads...
+Sum: 0
+$!./hadamard_serial_30000_4: 2.281352
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 10000) with 6 threads...
+Sum: 0
+$!./hadamard_serial_10000_6: 0.251769
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 20000) with 6 threads...
+Sum: 0
+$!./hadamard_serial_20000_6: 1.015844
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 30000) with 6 threads...
+Sum: 0
+$!./hadamard_serial_30000_6: 2.300085
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 10000) with 12 threads...
+Sum: 0
+$!./hadamard_serial_10000_12: 0.251288
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 20000) with 12 threads...
+Sum: 0
+$!./hadamard_serial_20000_12: 1.016936
+----------------------------------------------
+
+Benchmarking hadamard_serial (problem size: 30000) with 12 threads...
+Sum: 0
+$!./hadamard_serial_30000_12: 2.383617
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 10000) with 1 threads...
+Sum: 0
+$!./hadamard_p_dynamic_10000_1: 0.250840
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 20000) with 1 threads...
+Sum: 0
+$!./hadamard_p_dynamic_20000_1: 1.024799
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 30000) with 1 threads...
+Sum: 0
+$!./hadamard_p_dynamic_30000_1: 2.334885
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 10000) with 2 threads...
+Sum: 0
+$!./hadamard_p_dynamic_10000_2: 0.167280
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 20000) with 2 threads...
+Sum: 0
+$!./hadamard_p_dynamic_20000_2: 0.675373
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 30000) with 2 threads...
+Sum: 0
+$!./hadamard_p_dynamic_30000_2: 1.495458
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 10000) with 4 threads...
+Sum: 0
+$!./hadamard_p_dynamic_10000_4: 0.119508
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 20000) with 4 threads...
+Sum: 0
+$!./hadamard_p_dynamic_20000_4: 0.481378
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 30000) with 4 threads...
+Sum: 0
+$!./hadamard_p_dynamic_30000_4: 1.076206
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 10000) with 6 threads...
+Sum: 0
+$!./hadamard_p_dynamic_10000_6: 0.105702
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 20000) with 6 threads...
+Sum: 0
+$!./hadamard_p_dynamic_20000_6: 0.429085
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 30000) with 6 threads...
+Sum: 0
+$!./hadamard_p_dynamic_30000_6: 0.926242
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 10000) with 12 threads...
+Sum: 0
+$!./hadamard_p_dynamic_10000_12: 0.098629
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 20000) with 12 threads...
+Sum: 0
+$!./hadamard_p_dynamic_20000_12: 0.379579
+----------------------------------------------
+
+Benchmarking hadamard_p_dynamic (problem size: 30000) with 12 threads...
+Sum: 0
+$!./hadamard_p_dynamic_30000_12: 0.839898
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 10000) with 1 threads...
+Sum: 0
+$!./hadamard_p_guided_10000_1: 0.257423
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 20000) with 1 threads...
+Sum: 0
+$!./hadamard_p_guided_20000_1: 1.022727
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 30000) with 1 threads...
+Sum: 0
+$!./hadamard_p_guided_30000_1: 2.315003
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 10000) with 2 threads...
+Sum: 0
+$!./hadamard_p_guided_10000_2: 0.169935
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 20000) with 2 threads...
+Sum: 0
+$!./hadamard_p_guided_20000_2: 0.651536
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 30000) with 2 threads...
+Sum: 0
+$!./hadamard_p_guided_30000_2: 1.461301
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 10000) with 4 threads...
+Sum: 0
+$!./hadamard_p_guided_10000_4: 0.122610
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 20000) with 4 threads...
+Sum: 0
+$!./hadamard_p_guided_20000_4: 0.491203
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 30000) with 4 threads...
+Sum: 0
+$!./hadamard_p_guided_30000_4: 1.123837
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 10000) with 6 threads...
+Sum: 0
+$!./hadamard_p_guided_10000_6: 0.104459
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 20000) with 6 threads...
+Sum: 0
+$!./hadamard_p_guided_20000_6: 0.413011
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 30000) with 6 threads...
+Sum: 0
+$!./hadamard_p_guided_30000_6: 0.978918
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 10000) with 12 threads...
+Sum: 0
+$!./hadamard_p_guided_10000_12: 0.097547
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 20000) with 12 threads...
+Sum: 0
+$!./hadamard_p_guided_20000_12: 0.384956
+----------------------------------------------
+
+Benchmarking hadamard_p_guided (problem size: 30000) with 12 threads...
+Sum: 0
+$!./hadamard_p_guided_30000_12: 0.854797
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 10000) with 1 threads...
+Sum: 0
+$!./hadamard_p_auto_10000_1: 0.250079
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 20000) with 1 threads...
+Sum: 0
+$!./hadamard_p_auto_20000_1: 1.011961
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 30000) with 1 threads...
+Sum: 0
+$!./hadamard_p_auto_30000_1: 2.304104
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 10000) with 2 threads...
+Sum: 0
+$!./hadamard_p_auto_10000_2: 0.163265
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 20000) with 2 threads...
+Sum: 0
+$!./hadamard_p_auto_20000_2: 0.668682
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 30000) with 2 threads...
+Sum: 0
+$!./hadamard_p_auto_30000_2: 1.475940
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 10000) with 4 threads...
+Sum: 0
+$!./hadamard_p_auto_10000_4: 0.116144
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 20000) with 4 threads...
+Sum: 0
+$!./hadamard_p_auto_20000_4: 0.469745
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 30000) with 4 threads...
+Sum: 0
+$!./hadamard_p_auto_30000_4: 1.052882
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 10000) with 6 threads...
+Sum: 0
+$!./hadamard_p_auto_10000_6: 0.103428
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 20000) with 6 threads...
+Sum: 0
+$!./hadamard_p_auto_20000_6: 0.418271
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 30000) with 6 threads...
+Sum: 0
+$!./hadamard_p_auto_30000_6: 0.961326
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 10000) with 12 threads...
+Sum: 0
+$!./hadamard_p_auto_10000_12: 0.102342
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 20000) with 12 threads...
+Sum: 0
+$!./hadamard_p_auto_20000_12: 0.396651
+----------------------------------------------
+
+Benchmarking hadamard_p_auto (problem size: 30000) with 12 threads...
+Sum: 0
+$!./hadamard_p_auto_30000_12: 0.851415
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 10000) with 1 threads...
+Sum: 0
+$!./hadamard_p_runtime_10000_1: 0.249107
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 20000) with 1 threads...
+Sum: 0
+$!./hadamard_p_runtime_20000_1: 1.023484
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 30000) with 1 threads...
+Sum: 0
+$!./hadamard_p_runtime_30000_1: 2.298216
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 10000) with 2 threads...
+Sum: 0
+$!./hadamard_p_runtime_10000_2: 0.162341
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 20000) with 2 threads...
+Sum: 0
+$!./hadamard_p_runtime_20000_2: 0.656017
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 30000) with 2 threads...
+Sum: 0
+$!./hadamard_p_runtime_30000_2: 1.471320
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 10000) with 4 threads...
+Sum: 0
+$!./hadamard_p_runtime_10000_4: 0.119539
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 20000) with 4 threads...
+Sum: 0
+$!./hadamard_p_runtime_20000_4: 0.501324
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 30000) with 4 threads...
+Sum: 0
+$!./hadamard_p_runtime_30000_4: 1.136921
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 10000) with 6 threads...
+Sum: 0
+$!./hadamard_p_runtime_10000_6: 0.106796
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 20000) with 6 threads...
+Sum: 0
+$!./hadamard_p_runtime_20000_6: 0.430742
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 30000) with 6 threads...
+Sum: 0
+$!./hadamard_p_runtime_30000_6: 0.984088
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 10000) with 12 threads...
+Sum: 0
+$!./hadamard_p_runtime_10000_12: 0.098479
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 20000) with 12 threads...
+Sum: 0
+$!./hadamard_p_runtime_20000_12: 0.379063
+----------------------------------------------
+
+Benchmarking hadamard_p_runtime (problem size: 30000) with 12 threads...
+Sum: 0
+$!./hadamard_p_runtime_30000_12: 0.833743
+----------------------------------------------
+
