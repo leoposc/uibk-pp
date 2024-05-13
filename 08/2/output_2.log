@@ -1,0 +1,28 @@
+rm -f hadamard_2.o hadamard_2
+gcc -std=c99 -Wall -Wextra -fopenmp -c hadamard_2.c -o hadamard_2.o
+gcc -std=c99 -Wall -Wextra -fopenmp hadamard_2.o -o hadamard_2 -lm
+10000 n, sequentiell, time: 0.957744 seconds 
+10000 n, 1 threads, parallel, time: 0.657422 seconds 
+10000 n, 2 threads, parallel, time: 0.331931 seconds 
+10000 n, 4 threads, parallel, time: 0.181158 seconds 
+10000 n, 6 threads, parallel, time: 0.150653 seconds 
+10000 n, 12 threads, parallel, time: 0.174758 seconds 
+----------------------------------------------
+
+20000 n, sequentiell, time: 3.825845 seconds 
+20000 n, 1 threads, parallel, time: 2.602457 seconds 
+20000 n, 2 threads, parallel, time: 1.311275 seconds 
+20000 n, 4 threads, parallel, time: 0.781334 seconds 
+20000 n, 6 threads, parallel, time: 0.650093 seconds 
+20000 n, 12 threads, parallel, time: 0.648671 seconds 
+----------------------------------------------
+
+30000 n, sequentiell, time: 8.623268 seconds 
+30000 n, 1 threads, parallel, time: 5.882486 seconds 
+30000 n, 2 threads, parallel, time: 2.944328 seconds 
+30000 n, 4 threads, parallel, time: 1.759389 seconds 
+30000 n, 6 threads, parallel, time: 1.493472 seconds 
+30000 n, 12 threads, parallel, time: 1.468678 seconds 
+----------------------------------------------
+
+All benchmarks completed.

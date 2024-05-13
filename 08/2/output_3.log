@@ -1,0 +1,80 @@
+rm -f hadamard_dynamic hadamard_guided hadamard_static hadamard_2
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_dynamic hadamard_dynamic.c -lm -fopenmp
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_guided hadamard_guided.c -lm -fopenmp
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_static hadamard_static.c -lm -fopenmp
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_2 hadamard_2.c -lm -fopenmp
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_auto hadamard_auto.c -lm -fopenmp
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_runtime hadamard_runtime.c -lm -fopenmp
+Benchmarking program: hadamard_dynamic with matrix size: 10000
+10000 n, 1 threads, parallel, time: 1.213143 seconds 
+10000 n, 2 threads, parallel, time: 0.729622 seconds 
+10000 n, 4 threads, parallel, time: 1.293526 seconds 
+10000 n, 6 threads, parallel, time: 0.854630 seconds 
+10000 n, 12 threads, parallel, time: 1.628680 seconds 
+----------------------------------------------
+
+Benchmarking program: hadamard_guided with matrix size: 10000
+10000 n, 1 threads, parallel, time: 0.939794 seconds 
+10000 n, 2 threads, parallel, time: 0.333915 seconds 
+10000 n, 4 threads, parallel, time: 0.181539 seconds 
+10000 n, 6 threads, parallel, time: 0.165936 seconds 
+10000 n, 12 threads, parallel, time: 0.153856 seconds 
+----------------------------------------------
+
+Benchmarking program: hadamard_static with matrix size: 10000
+10000 n, 1 threads, parallel, time: 0.941595 seconds 
+10000 n, 2 threads, parallel, time: 0.332481 seconds 
+10000 n, 4 threads, parallel, time: 0.179683 seconds 
+10000 n, 6 threads, parallel, time: 0.166010 seconds 
+10000 n, 12 threads, parallel, time: 0.173227 seconds 
+----------------------------------------------
+
+Benchmarking program: hadamard_dynamic with matrix size: 20000
+20000 n, 1 threads, parallel, time: 4.952744 seconds 
+20000 n, 2 threads, parallel, time: 3.024669 seconds 
+20000 n, 4 threads, parallel, time: 3.695247 seconds 
+20000 n, 6 threads, parallel, time: 5.005779 seconds 
+20000 n, 12 threads, parallel, time: 4.499460 seconds 
+----------------------------------------------
+
+Benchmarking program: hadamard_guided with matrix size: 20000
+20000 n, 1 threads, parallel, time: 3.704131 seconds 
+20000 n, 2 threads, parallel, time: 1.308231 seconds 
+20000 n, 4 threads, parallel, time: 0.718988 seconds 
+20000 n, 6 threads, parallel, time: 0.613875 seconds 
+20000 n, 12 threads, parallel, time: 0.641383 seconds 
+----------------------------------------------
+
+Benchmarking program: hadamard_static with matrix size: 20000
+20000 n, 1 threads, parallel, time: 3.803498 seconds 
+20000 n, 2 threads, parallel, time: 1.319578 seconds 
+20000 n, 4 threads, parallel, time: 0.714467 seconds 
+20000 n, 6 threads, parallel, time: 0.660674 seconds 
+20000 n, 12 threads, parallel, time: 0.665279 seconds 
+----------------------------------------------
+
+Benchmarking program: hadamard_dynamic with matrix size: 30000
+30000 n, 1 threads, parallel, time: 11.279512 seconds 
+30000 n, 2 threads, parallel, time: 6.909748 seconds 
+30000 n, 4 threads, parallel, time: 11.052843 seconds 
+30000 n, 6 threads, parallel, time: 7.843205 seconds 
+30000 n, 12 threads, parallel, time: 14.328827 seconds 
+----------------------------------------------
+
+Benchmarking program: hadamard_guided with matrix size: 30000
+30000 n, 1 threads, parallel, time: 8.490260 seconds 
+30000 n, 2 threads, parallel, time: 2.936406 seconds 
+30000 n, 4 threads, parallel, time: 1.734862 seconds 
+30000 n, 6 threads, parallel, time: 1.346967 seconds 
+30000 n, 12 threads, parallel, time: 1.405384 seconds 
+----------------------------------------------
+
+Benchmarking program: hadamard_static with matrix size: 30000
+30000 n, 1 threads, parallel, time: 8.444235 seconds 
+30000 n, 2 threads, parallel, time: 2.972773 seconds 
+30000 n, 4 threads, parallel, time: 1.751536 seconds 
+30000 n, 6 threads, parallel, time: 1.470135 seconds 
+30000 n, 12 threads, parallel, time: 1.476484 seconds 
+----------------------------------------------
+
+All benchmarks completed.

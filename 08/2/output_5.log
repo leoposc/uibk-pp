@@ -1,0 +1,21 @@
+rm -f hadamard_dynamic hadamard_guided hadamard_static hadamard_2 hadamard_auto hadamard_runtime hadamard_all
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_dynamic hadamard_dynamic.c -lm -fopenmp
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_guided hadamard_guided.c -lm -fopenmp
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_static hadamard_static.c -lm -fopenmp
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_2 hadamard_2.c -lm -fopenmp
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_auto hadamard_auto.c -lm -fopenmp
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_runtime hadamard_runtime.c -lm -fopenmp
+gcc -std=gnu11 -Wall -Werror -Wextra -fopenmp -o hadamard_all hadamard_all.c -lm -fopenmp
+Benchmarking program: hadamard_all with matrix size: 65536
+Malloc done
+Init done
+OMP_SCHEDULE: dynamic
+Chunk size: 1
+dynamic: 65536 n, 12 threads, parallel, time: 39.603035 seconds 
+guided: 65536 n, 12 threads, parallel, time: 24.914424 seconds 
+static: 65536 n, 12 threads, parallel, time: 24.713086 seconds 
+auto: 65536 n, 12 threads, parallel, time: 25.220760 seconds 
+runtime: 65536 n, 12 threads, parallel, time: 139.154787 seconds 
+----------------------------------------------
+
+All benchmarks completed.

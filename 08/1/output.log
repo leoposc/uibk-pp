@@ -1,0 +1,12 @@
+Affinity Setting: OMP_PROC_BIND= master
+Counter value after incrementing: 500000000
+Time taken: 3.135733 seconds
+=============================
+Affinity Setting: OMP_PROC_BIND= close
+Counter value after incrementing: 500000000
+Time taken: 8.285917 seconds
+=============================
+Affinity Setting: OMP_PROC_BIND= spread
+Counter value after incrementing: 500000000
+Time taken: 17.816550 seconds
+=============================
