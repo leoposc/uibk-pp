@@ -1,0 +1,156 @@
+Matrix size: 10000
+Scheduling type: static
+Number of threads: 1
+Time taken (static): 0.150451 seconds
+----------------------------------------
+Number of threads: 2
+Time taken (static): 0.101452 seconds
+----------------------------------------
+Number of threads: 4
+Time taken (static): 0.079422 seconds
+----------------------------------------
+Number of threads: 6
+Time taken (static): 0.074056 seconds
+----------------------------------------
+Number of threads: 12
+Time taken (static): 0.075134 seconds
+----------------------------------------
+Scheduling type: dynamic
+Number of threads: 1
+Time taken (dynamic): 0.148526 seconds
+----------------------------------------
+Number of threads: 2
+Time taken (dynamic): 0.118761 seconds
+----------------------------------------
+Number of threads: 4
+Time taken (dynamic): 0.124635 seconds
+----------------------------------------
+Number of threads: 6
+Time taken (dynamic): 0.110596 seconds
+----------------------------------------
+Number of threads: 12
+Time taken (dynamic): 0.225326 seconds
+----------------------------------------
+Scheduling type: guided
+Number of threads: 1
+Time taken (guided): 0.148561 seconds
+----------------------------------------
+Number of threads: 2
+Time taken (guided): 0.096415 seconds
+----------------------------------------
+Number of threads: 4
+Time taken (guided): 0.073823 seconds
+----------------------------------------
+Number of threads: 6
+Time taken (guided): 0.068480 seconds
+----------------------------------------
+Number of threads: 12
+Time taken (guided): 0.068699 seconds
+----------------------------------------
+Executing program without schedule for matrix size 10000
+Time taken (serial): 0.149196 seconds
+----------------------------------------
+Matrix size: 20000
+Scheduling type: static
+Number of threads: 1
+Time taken (static): 0.623393 seconds
+----------------------------------------
+Number of threads: 2
+Time taken (static): 0.402164 seconds
+----------------------------------------
+Number of threads: 4
+Time taken (static): 0.275202 seconds
+----------------------------------------
+Number of threads: 6
+Time taken (static): 0.258859 seconds
+----------------------------------------
+Number of threads: 12
+Time taken (static): 0.269844 seconds
+----------------------------------------
+Scheduling type: dynamic
+Number of threads: 1
+Time taken (dynamic): 0.623840 seconds
+----------------------------------------
+Number of threads: 2
+Time taken (dynamic): 0.484389 seconds
+----------------------------------------
+Number of threads: 4
+Time taken (dynamic): 0.397984 seconds
+----------------------------------------
+Number of threads: 6
+Time taken (dynamic): 0.476978 seconds
+----------------------------------------
+Number of threads: 12
+Time taken (dynamic): 0.937919 seconds
+----------------------------------------
+Scheduling type: guided
+Number of threads: 1
+Time taken (guided): 0.612244 seconds
+----------------------------------------
+Number of threads: 2
+Time taken (guided): 0.404332 seconds
+----------------------------------------
+Number of threads: 4
+Time taken (guided): 0.295645 seconds
+----------------------------------------
+Number of threads: 6
+Time taken (guided): 0.277197 seconds
+----------------------------------------
+Number of threads: 12
+Time taken (guided): 0.280650 seconds
+----------------------------------------
+Executing program without schedule for matrix size 20000
+Time taken (serial): 0.606719 seconds
+----------------------------------------
+Matrix size: 30000
+Scheduling type: static
+Number of threads: 1
+Time taken (static): 1.317942 seconds
+----------------------------------------
+Number of threads: 2
+Time taken (static): 0.880471 seconds
+----------------------------------------
+Number of threads: 4
+Time taken (static): 0.603182 seconds
+----------------------------------------
+Number of threads: 6
+Time taken (static): 0.559266 seconds
+----------------------------------------
+Number of threads: 12
+Time taken (static): 0.629956 seconds
+----------------------------------------
+Scheduling type: dynamic
+Number of threads: 1
+Time taken (dynamic): 1.323784 seconds
+----------------------------------------
+Number of threads: 2
+Time taken (dynamic): 1.051840 seconds
+----------------------------------------
+Number of threads: 4
+Time taken (dynamic): 0.887141 seconds
+----------------------------------------
+Number of threads: 6
+Time taken (dynamic): 1.023045 seconds
+----------------------------------------
+Number of threads: 12
+Time taken (dynamic): 2.038871 seconds
+----------------------------------------
+Scheduling type: guided
+Number of threads: 1
+Time taken (guided): 1.329178 seconds
+----------------------------------------
+Number of threads: 2
+Time taken (guided): 0.867395 seconds
+----------------------------------------
+Number of threads: 4
+Time taken (guided): 0.556500 seconds
+----------------------------------------
+Number of threads: 6
+Time taken (guided): 0.552520 seconds
+----------------------------------------
+Number of threads: 12
+Time taken (guided): 0.593953 seconds
+----------------------------------------
+Executing program without schedule for matrix size 30000
+Time taken (serial): 1.317539 seconds
+
