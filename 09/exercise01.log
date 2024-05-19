@@ -1,0 +1,54 @@
+Benchmarking exercise01 (problem size: 128) with 1 threads...
+sum = 404350976
+$!./exercise01: 0.172407
+----------------------------------------------
+
+Benchmarking exercise01 (problem size: 512) with 1 threads...
+sum = 1228906496
+$!./exercise01: 0.675151
+----------------------------------------------
+
+Benchmarking exercise01 (problem size: 1024) with 1 threads...
+sum = -725663744
+$!./exercise01: 1.343681
+----------------------------------------------
+
+Benchmarking exercise01 (problem size: 2048) with 1 threads...
+sum = -1300332544
+$!./exercise01: 2.683731
+----------------------------------------------
+
+Benchmarking exercise01 (problem size: 4096) with 1 threads...
+sum = -1996685312
+$!./exercise01: 5.384888
+----------------------------------------------
+
+Benchmarking exercise01 (problem size: 8192) with 1 threads...
+sum = -1577451520
+$!./exercise01: 10.724112
+----------------------------------------------
+
+Benchmarking exercise01_vectorized (problem size: 128) with 1 threads...
+/var/spool/slurm/slurmd/job100616/slurm_script: line 33: ./exercise01_vectorized: No such file or directory
+----------------------------------------------
+
+Benchmarking exercise01_vectorized (problem size: 512) with 1 threads...
+/var/spool/slurm/slurmd/job100616/slurm_script: line 33: ./exercise01_vectorized: No such file or directory
+----------------------------------------------
+
+Benchmarking exercise01_vectorized (problem size: 1024) with 1 threads...
+/var/spool/slurm/slurmd/job100616/slurm_script: line 33: ./exercise01_vectorized: No such file or directory
+----------------------------------------------
+
+Benchmarking exercise01_vectorized (problem size: 2048) with 1 threads...
+/var/spool/slurm/slurmd/job100616/slurm_script: line 33: ./exercise01_vectorized: No such file or directory
+----------------------------------------------
+
+Benchmarking exercise01_vectorized (problem size: 4096) with 1 threads...
+/var/spool/slurm/slurmd/job100616/slurm_script: line 33: ./exercise01_vectorized: No such file or directory
+----------------------------------------------
+
+Benchmarking exercise01_vectorized (problem size: 8192) with 1 threads...
+/var/spool/slurm/slurmd/job100616/slurm_script: line 33: ./exercise01_vectorized: No such file or directory
+----------------------------------------------
+

@@ -1,0 +1,30 @@
+Benchmarking exercise03 (problem size: 128) with 1 threads...
+sum = 0
+$!./exercise03: 0.033987
+----------------------------------------------
+
+Benchmarking exercise03 (problem size: 512) with 1 threads...
+sum = 0
+$!./exercise03: 0.172520
+----------------------------------------------
+
+Benchmarking exercise03 (problem size: 1024) with 1 threads...
+sum = 0
+$!./exercise03: 0.341568
+----------------------------------------------
+
+Benchmarking exercise03 (problem size: 2048) with 1 threads...
+sum = 0
+$!./exercise03: 0.676537
+----------------------------------------------
+
+Benchmarking exercise03 (problem size: 4096) with 1 threads...
+sum = 0
+$!./exercise03: 1.605571
+----------------------------------------------
+
+Benchmarking exercise03 (problem size: 8192) with 1 threads...
+sum = 0
+$!./exercise03: 3.264677
+----------------------------------------------
+
