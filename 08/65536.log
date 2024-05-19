@@ -1,0 +1,4 @@
+Benchmarking hadamard_p_static (problem size: 1000) with 12 threads...
+$!./hadamard_p_static_1000_12: 0.001541
+----------------------------------------------
+
