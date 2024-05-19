@@ -1,0 +1,39 @@
+Elapsed time: 0.508981 seconds
+Result is correct.
+
+ Performance counter stats for './openmp_float 2048':
+
+     1,024,007,562      r1010:u                                                     
+
+       0.513535437 seconds time elapsed
+
+       0.508325000 seconds user
+       0.001995000 seconds sys
+
+
+Elapsed time: 0.509030 seconds
+Result is correct.
+
+ Performance counter stats for './openmp_float 2048':
+
+                 0      r1020:u                                                     
+
+       0.512248176 seconds time elapsed
+
+       0.507142000 seconds user
+       0.002971000 seconds sys
+
+
+Elapsed time: 0.508784 seconds
+Result is correct.
+
+ Performance counter stats for './openmp_float 2048':
+
+                 0      r1040:u                                                     
+
+       0.511789034 seconds time elapsed
+
+       0.508991000 seconds user
+       0.000989000 seconds sys
+
+

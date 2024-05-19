@@ -1,0 +1,36 @@
+Computation took 0.509018 seconds:   Result is correct.
+
+ Performance counter stats for './sequential_optimized 2048':
+
+     1,024,006,971      r1010:u                                                     
+
+       0.512921578 seconds time elapsed
+
+       0.509359000 seconds user
+       0.000984000 seconds sys
+
+
+Computation took 0.509985 seconds:   Result is correct.
+
+ Performance counter stats for './sequential_optimized 2048':
+
+                 0      r1020:u                                                     
+
+       0.513042118 seconds time elapsed
+
+       0.510273000 seconds user
+       0.000991000 seconds sys
+
+
+Computation took 0.509026 seconds:   Result is correct.
+
+ Performance counter stats for './sequential_optimized 2048':
+
+                 0      r1040:u                                                     
+
+       0.511924112 seconds time elapsed
+
+       0.510279000 seconds user
+       0.000000000 seconds sys
+
+

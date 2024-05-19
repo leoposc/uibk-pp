@@ -1,0 +1,7 @@
+Sequential execution with float: 2.706636 seconds
+
+OpenMP execution with float: 0.511293 seconds
+
+Sequential execution with double: 2.694863 seconds
+
+OpenMP execution with double: 1.566916 seconds

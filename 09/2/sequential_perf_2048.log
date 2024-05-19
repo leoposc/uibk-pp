@@ -1,0 +1,36 @@
+Computation took 2.676794 seconds:   Result is correct.
+
+ Performance counter stats for './sequential 2048':
+
+                 0      r1010:u                                                     
+
+       2.684666951 seconds time elapsed
+
+       2.676026000 seconds user
+       0.002974000 seconds sys
+
+
+Computation took 2.680520 seconds:   Result is correct.
+
+ Performance counter stats for './sequential 2048':
+
+                 0      r1020:u                                                     
+
+       2.688339385 seconds time elapsed
+
+       2.680613000 seconds user
+       0.001983000 seconds sys
+
+
+Computation took 2.676135 seconds:   Result is correct.
+
+ Performance counter stats for './sequential 2048':
+
+                 0      r1040:u                                                     
+
+       2.683219862 seconds time elapsed
+
+       2.678093000 seconds user
+       0.000000000 seconds sys
+
+
