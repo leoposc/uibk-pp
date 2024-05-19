@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
         sum += a[i];
     }
     printf("sum = %d\n", sum);
-    printf("$!%s_vectorized: %f\n",argv[0], end - start);
+    printf("$!%s: %f\n",argv[0], end - start);
 
     return 0;
 }

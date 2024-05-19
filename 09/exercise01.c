@@ -4,40 +4,40 @@
 
 #define REPETITIONS 1000000
 
-int main(int argc, char *argv[]) {
-    
-    if (argc != 2) {
-        printf("Usage: %s <n>\n", argv[0]);
-        return 1;
-    }
+int main(int argc, char* argv[]) {
 
-    int size = atoi(argv[1]);
+	if(argc != 2) {
+		printf("Usage: %s <n>\n", argv[0]);
+		return 1;
+	}
 
-    int a[size], b[size], c[size];
+	int size = atoi(argv[1]);
 
-    for(int i = 0; i < size; ++i) {
-        a[i] = 0;
-        b[i] = i;
-        c[i] = (i/2) - i;
-    }
+	int a[size], b[size], c[size];
 
-     // measure time
-    double start = omp_get_wtime();
+	for(int i = 0; i < size; ++i) {
+		a[i] = 0;
+		b[i] = i;
+		c[i] = (i / 2) - i;
+	}
 
-    for(int run = 0; run < REPETITIONS; ++run) {
-        for(int i = 0; i < size; ++i) {
-            a[i] += b[i] * c[i];
-        }
-    }
+	// measure time
+	double start = omp_get_wtime();
 
-    double end = omp_get_wtime();
+	for(int run = 0; run < REPETITIONS; ++run) {
+		for(int i = 0; i < size; ++i) {
+			a[i] += b[i] * c[i];
+		}
+	}
 
-    int sum = 0;
-    for (int i = 0; i < size; ++i) {
-        sum += a[i];
-    }
-    printf("sum = %d\n", sum);
-    printf("$!%s: %f\n",argv[0], end - start);
+	double end = omp_get_wtime();
 
-    return 0;
+	int sum = 0;
+	for(int i = 0; i < size; ++i) {
+		sum += a[i];
+	}
+	printf("sum = %d\n", sum);
+	printf("$!%s: %f\n", argv[0], end - start);
+
+	return 0;
 }
