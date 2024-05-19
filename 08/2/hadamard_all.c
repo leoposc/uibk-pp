@@ -54,7 +54,7 @@ int main(int argc, char** argv) {
 		return 1;
 	}
 	size_t n = atoi(argv[1]);
-	int_fast8_t ** a = (int_fast8_t**)malloc(n * sizeof(int_fast8_t*));
+	int_fast8_t** a = (int_fast8_t**)malloc(n * sizeof(int_fast8_t*));
 	int_fast8_t** b = (int_fast8_t**)malloc(n * sizeof(int_fast8_t*));
 	int_fast8_t** c = (int_fast8_t**)malloc(n * sizeof(int_fast8_t*));
 

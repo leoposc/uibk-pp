@@ -1,0 +1,129 @@
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+
+ Performance counter stats for './vectorized_optimized 1000':
+
+                 0      r0101:u                                                     
+
+       0.330116828 seconds time elapsed
+
+       0.327762000 seconds user
+       0.000995000 seconds sys
+
+
+
+ Performance counter stats for './vectorized_optimized 1000':
+
+             8,373      r0102:u                                                     
+
+       0.330450953 seconds time elapsed
+
+       0.329008000 seconds user
+       0.000000000 seconds sys
+
+
+
+ Performance counter stats for './vectorized_optimized 1000':
+
+             9,101      r0104:u                                                     
+
+       0.332196958 seconds time elapsed
+
+       0.329736000 seconds user
+       0.000999000 seconds sys
+
+
+
+ Performance counter stats for './vectorized_optimized 1000':
+
+               592      r0108:u                                                     
+
+       0.333682961 seconds time elapsed
+
+       0.332070000 seconds user
+       0.000000000 seconds sys
+
+
+
+ Performance counter stats for './vectorized_optimized 1000':
+
+             1,183      r0110:u                                                     
+
+       0.330364736 seconds time elapsed
+
+       0.328016000 seconds user
+       0.000992000 seconds sys
+
+
+
+ Performance counter stats for './vectorized_optimized 1000':
+
+                94      r0120:u                                                     
+
+       0.329802175 seconds time elapsed
+
+       0.327205000 seconds user
+       0.000989000 seconds sys
+
+
+
+ Performance counter stats for './vectorized_optimized 1000':
+
+            43,328      r0140:u                                                     
+
+       0.330278882 seconds time elapsed
+
+       0.327895000 seconds user
+       0.000987000 seconds sys
+
+
+
+ Performance counter stats for './vectorized_optimized 1000':
+
+        49,183,419      r0180:u                                                     
+
+       0.330331015 seconds time elapsed
+
+       0.327896000 seconds user
+       0.000992000 seconds sys
+
+
+
+ Performance counter stats for './vectorized_optimized 1000':
+
+       500,003,961      r1010:u                                                     
+
+       0.330095890 seconds time elapsed
+
+       0.325047000 seconds user
+       0.002966000 seconds sys
+
+
+
+ Performance counter stats for './vectorized_optimized 1000':
+
+                 0      r1020:u                                                     
+
+       0.329397448 seconds time elapsed
+
+       0.325869000 seconds user
+       0.001979000 seconds sys
+
+
+
+ Performance counter stats for './vectorized_optimized 1000':
+
+                 0      r1040:u                                                     
+
+       0.329466598 seconds time elapsed
+
+       0.326866000 seconds user
+       0.000997000 seconds sys
+
+

@@ -1,0 +1,129 @@
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+Workload failed: No such file or directory
+
+ Performance counter stats for './vectorized 1000':
+
+                 0      r0101:u                                                     
+
+       5.072628729 seconds time elapsed
+
+       5.061039000 seconds user
+       0.001975000 seconds sys
+
+
+
+ Performance counter stats for './vectorized 1000':
+
+     6,020,247,998      r0102:u                                                     
+
+       4.922526609 seconds time elapsed
+
+       4.913176000 seconds user
+       0.000994000 seconds sys
+
+
+
+ Performance counter stats for './vectorized 1000':
+
+         7,995,146      r0104:u                                                     
+
+       5.154363277 seconds time elapsed
+
+       5.144330000 seconds user
+       0.000997000 seconds sys
+
+
+
+ Performance counter stats for './vectorized 1000':
+
+               729      r0108:u                                                     
+
+       5.120926767 seconds time elapsed
+
+       5.112675000 seconds user
+       0.000000000 seconds sys
+
+
+
+ Performance counter stats for './vectorized 1000':
+
+             1,285      r0110:u                                                     
+
+       5.037786022 seconds time elapsed
+
+       5.027332000 seconds user
+       0.001986000 seconds sys
+
+
+
+ Performance counter stats for './vectorized 1000':
+
+         1,998,575      r0120:u                                                     
+
+       5.063327033 seconds time elapsed
+
+       5.053468000 seconds user
+       0.001991000 seconds sys
+
+
+
+ Performance counter stats for './vectorized 1000':
+
+           176,532      r0140:u                                                     
+
+       5.041797423 seconds time elapsed
+
+       5.032165000 seconds user
+       0.001991000 seconds sys
+
+
+
+ Performance counter stats for './vectorized 1000':
+
+     9,139,315,667      r0180:u                                                     
+
+       5.146072919 seconds time elapsed
+
+       5.137018000 seconds user
+       0.000991000 seconds sys
+
+
+
+ Performance counter stats for './vectorized 1000':
+
+                 0      r1010:u                                                     
+
+       5.117374000 seconds time elapsed
+
+       5.106799000 seconds user
+       0.000991000 seconds sys
+
+
+
+ Performance counter stats for './vectorized 1000':
+
+                 0      r1020:u                                                     
+
+       5.204625082 seconds time elapsed
+
+       5.195804000 seconds user
+       0.000000000 seconds sys
+
+
+
+ Performance counter stats for './vectorized 1000':
+
+                 0      r1040:u                                                     
+
+       5.059733685 seconds time elapsed
+
+       5.047342000 seconds user
+       0.000989000 seconds sys
+
+

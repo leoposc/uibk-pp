@@ -1,0 +1,18 @@
+ERROR: Unable to locate a modulefile for 'perf'
+rm -f baseline vectorized vectorized_optimized
+gcc -std=c99 -Wall -ftree-vectorize -o vectorized sequential.c
+gcc -std=c99 -Wall -O2 -ftree-vectorize -o vectorized_optimized sequential.c
+Profiling vectorized with perf for size: 1000
+Event r1010
+Computation took 5.106381 seconds:   Result is correct.
+Event r1020
+Computation took 5.194543 seconds:   Result is correct.
+Event r1040
+Computation took 5.046982 seconds:   Result is correct.
+Profiling vectorized_optimized with perf for size: 1000
+Event r1010
+Computation took 0.326620 seconds:   Result is correct.
+Event r1020
+Computation took 0.326582 seconds:   Result is correct.
+Event r1040
+Computation took 0.326602 seconds:   Result is correct.
