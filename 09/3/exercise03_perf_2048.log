@@ -1,0 +1,39 @@
+sum = -1430608509140992.000000
+$!./exercise03: 0.675767
+
+ Performance counter stats for './exercise03 2048':
+
+     1,024,006,605      r1010:u                                                     
+
+       0.679468596 seconds time elapsed
+
+       0.674755000 seconds user
+       0.001982000 seconds sys
+
+
+sum = -1430608509140992.000000
+$!./exercise03: 0.675552
+
+ Performance counter stats for './exercise03 2048':
+
+                 0      r1020:u                                                     
+
+       0.678730076 seconds time elapsed
+
+       0.673498000 seconds user
+       0.002976000 seconds sys
+
+
+sum = -1430608509140992.000000
+$!./exercise03: 0.676446
+
+ Performance counter stats for './exercise03 2048':
+
+                 0      r1040:u                                                     
+
+       0.679431914 seconds time elapsed
+
+       0.676351000 seconds user
+       0.000989000 seconds sys
+
+

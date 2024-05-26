@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
     for (int i = 0; i < size; ++i) {
         sum += a[i];
     }
-    printf("sum = %d\n", sum);
+    printf("sum = %f\n", sum);
     printf("$!%s: %f\n",argv[0], end - start);
 
     _mm_free(a);

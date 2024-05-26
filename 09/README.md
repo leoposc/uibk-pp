@@ -100,7 +100,7 @@ Instead of relying on OpenMP for vectorization, we will do so using compiler-spe
   | FP_COMP_OPS_EXE.SSE_SINGLE_PRECISION |     10     |    40     |  256.036.138 |
   | FP_COMP_OPS_EXE.SSE_DOUBLE_PRECISION |     10     |    80     |     2.057    |
 
-  ![Execution time comparison](./exercise03.png)
+  ![Execution time comparison](3/exercise03.png)
 
   (X-axis shows the problem size of the matrixes. The amount of repititions is set to a static number: 1e6)
 

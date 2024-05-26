@@ -15,6 +15,11 @@
 make clean
 make
 
-SIZE=2048
+PROBLEM_SIZES=(1024, 2048, 4096)
 
-./program $SIZE
+for SIZE in ${PROBLEM_SIZES[*]}; do
+
+  echo "\n \n $SIZE: "
+  ./all_versions $SIZE
+
+done
