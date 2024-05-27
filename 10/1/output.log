@@ -1,0 +1,38 @@
+rm -f sequential parallel
+gcc -std=c99 -Wall -O1 -fopenmp -o sequential sequential.c
+gcc -std=c99 -Wall -O1 -fopenmp -o parallel parallel.c
+Computing sequential N: 5
+Elapsed time: 0.000008 seconds
+Result: 1683
+Computing parallel N: 5
+Elapsed time: 0.001119 seconds
+Result: 1683
+
+Computing sequential N: 9
+Elapsed time: 0.006269 seconds
+Result: 1462563
+Computing parallel N: 9
+Elapsed time: 0.003146 seconds
+Result: 1462563
+
+Computing sequential N: 10
+Elapsed time: 0.034701 seconds
+Result: 8097453
+Computing parallel N: 10
+Elapsed time: 0.004773 seconds
+Result: 8097453
+
+Computing sequential N: 11
+Elapsed time: 0.190895 seconds
+Result: 45046719
+Computing parallel N: 11
+Elapsed time: 0.022595 seconds
+Result: 45046719
+
+Computing sequential N: 12
+Elapsed time: 1.068707 seconds
+Result: 251595969
+Computing parallel N: 12
+Elapsed time: 0.105579 seconds
+Result: 251595969
+
