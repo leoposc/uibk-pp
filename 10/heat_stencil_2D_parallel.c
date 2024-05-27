@@ -64,7 +64,6 @@ int main(int argc, char **argv) {
     printf("\n");
 
     // ---------- compute ----------
-
     double start = omp_get_wtime();
 
     // for each time step ..
@@ -74,8 +73,8 @@ int main(int argc, char **argv) {
         
         // make sure the heat source stays the same
         B[IND(source_x,source_y)] = 273.0 + 60;
-        // swap matrices (just pointers, not content)
 
+        // swap matrices (just pointers, not content)
         H = A;
         A = B;
         B = H;
@@ -123,6 +122,7 @@ int main(int argc, char **argv) {
 
 
 double calc_nearby_head_diff(Vector A, Vector B, int N) {
+#pragma omp parallel for collapse(2)
     for (int y = 0; y < N; y++) {
         for (int x = 0; x < N; x++) {
             double t = A[IND(x,y)];

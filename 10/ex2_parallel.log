@@ -1,0 +1,764 @@
+Benchmarking heat_stencil_2D_parallel (problem size: 500) with 1 threads...
+Computing heat-distribution for room size 500X500 for T=5000 timesteps
+Initial:	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X            @                                     X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Step t=0
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X            @                                     X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Step t=1000
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X           ...                                    X
+	X          .---.                                   X
+	X         .-+^*-.                                  X
+	X         .-^@X:.                                  X
+	X         .-*X*-.                                  X
+	X          .-:-.                                   X
+	X           ...                                    X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Step t=2000
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X           ...                                    X
+	X         ..---..                                  X
+	X         .-:=:-.                                  X
+	X        .-:*X^:-.                                 X
+	X        .-=X@#=-.                                 X
+	X        .-:^#^=-.                                 X
+	X         .-:==-.                                  X
+	X         ..---..                                  X
+	X           ...                                    X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Step t=3000
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X         .......                                  X
+	X        ..-----..                                 X
+	X        .-:===:-.                                 X
+	X        .-=^X^=-.                                 X
+	X        .-=X@#=-.                                 X
+	X        .-=^#X=-.                                 X
+	X        .-:===:-.                                 X
+	X        ..-----..                                 X
+	X         .......                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Step t=4000
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X          .....                                   X
+	X        ....--...                                 X
+	X        ..-:::--.                                 X
+	X       ..-:=+=:-..                                X
+	X       ..:=^#X+:-.                                X
+	X       .-:+#@%+:-.                                X
+	X       .-:=X%X+:-.                                X
+	X       ..-:+++:-..                                X
+	X        .--:::--.                                 X
+	X        ...---...                                 X
+	X          .....                                   X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+$!./heat_stencil_2D_parallel: 8.453333
+Final:	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X           ...                                    X
+	X         .......                                  X
+	X        ..-----..                                 X
+	X       ..--::::-..                                X
+	X       .--=+++=:-.                                X
+	X      ..-:+X#X+:-..                               X
+	X      ..-:+#@%+:-..                               X
+	X      ..-:+X%X+:-..                               X
+	X       .-:=+++=:-.                                X
+	X       ..-:::::-..                                X
+	X        ..-----..                                 X
+	X         .......                                  X
+	X           ...                                    X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Verification: OK
+----------------------------------------------
+
+Benchmarking heat_stencil_2D_parallel (problem size: 500) with 12 threads...
+Computing heat-distribution for room size 500X500 for T=5000 timesteps
+Initial:	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X            @                                     X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Step t=0
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X            @                                     X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Step t=1000
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X           ...                                    X
+	X          .---.                                   X
+	X         .-+^*-.                                  X
+	X         .-^@X:.                                  X
+	X         .-*X*-.                                  X
+	X          .-:-.                                   X
+	X           ...                                    X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Step t=2000
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X           ...                                    X
+	X         ..---..                                  X
+	X         .-:=:-.                                  X
+	X        .-:*X^:-.                                 X
+	X        .-=X@#=-.                                 X
+	X        .-:^#^=-.                                 X
+	X         .-:==-.                                  X
+	X         ..---..                                  X
+	X           ...                                    X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Step t=3000
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X         .......                                  X
+	X        ..-----..                                 X
+	X        .-:===:-.                                 X
+	X        .-=^X^=-.                                 X
+	X        .-=X@#=-.                                 X
+	X        .-=^#X=-.                                 X
+	X        .-:===:-.                                 X
+	X        ..-----..                                 X
+	X         .......                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Step t=4000
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X          .....                                   X
+	X        ....--...                                 X
+	X        ..-:::--.                                 X
+	X       ..-:=+=:-..                                X
+	X       ..:=^#X+:-.                                X
+	X       .-:+#@%+:-.                                X
+	X       .-:=X%X+:-.                                X
+	X       ..-:+++:-..                                X
+	X        .--:::--.                                 X
+	X        ...---...                                 X
+	X          .....                                   X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+$!./heat_stencil_2D_parallel: 1.468021
+Final:	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X           ...                                    X
+	X         .......                                  X
+	X        ..-----..                                 X
+	X       ..--::::-..                                X
+	X       .--=+++=:-.                                X
+	X      ..-:+X#X+:-..                               X
+	X      ..-:+#@%+:-..                               X
+	X      ..-:+X%X+:-..                               X
+	X       .-:=+++=:-.                                X
+	X       ..-:::::-..                                X
+	X        ..-----..                                 X
+	X         .......                                  X
+	X           ...                                    X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	X                                                  X
+	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Verification: OK
+----------------------------------------------
+

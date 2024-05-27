@@ -1,0 +1,15 @@
+Benchmarking delannoy_parallel (problem size: 3) with 12 threads...
+Delannoy(3) = 63
+$!./delannoy_parallel: 0.000820 seconds
+----------------------------------------------
+
+Benchmarking delannoy_parallel (problem size: 8) with 12 threads...
+Delannoy(8) = 265729
+$!./delannoy_parallel: 0.001006 seconds
+----------------------------------------------
+
+Benchmarking delannoy_parallel (problem size: 12) with 12 threads...
+Delannoy(12) = 251595969
+$!./delannoy_parallel: 0.302157 seconds
+----------------------------------------------
+
