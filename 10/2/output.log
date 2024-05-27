@@ -1,0 +1,119 @@
+rm -f heat_stencil_2D_parallel heat_stencil_2D_sequential
+gcc -std=c99 -Wall -O1 -fopenmp -o heat_stencil_2D_parallel heat_stencil_2D_parallel.c
+heat_stencil_2D_parallel.c: In function ‘main’:
+heat_stencil_2D_parallel.c:126:37: warning: ‘success’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     return (success) ? EXIT_SUCCESS : EXIT_FAILURE;
+                                     ^
+gcc -std=c99 -Wall -O1 -fopenmp -o heat_stencil_2D_sequential heat_stencil_2D_sequential.c
+heat_stencil_2D_sequential.c: In function ‘main’:
+heat_stencil_2D_sequential.c:125:37: warning: ‘success’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     return (success) ? EXIT_SUCCESS : EXIT_FAILURE;
+                                     ^
+Benchmarking sequential with size 125:
+Computing heat-distribution for room size 125X125 for T=1250 timesteps
+Verification: OK
+Elapsed time: 0.090159 seconds
+----------------------------------------------
+
+Benchmarking parallel with 1 threads, size 125
+Computing heat-distribution for room size 125X125 for T=1250 timesteps
+Verification: OK
+Elapsed time: 0.106275 seconds
+----------------------------------------------
+
+Benchmarking parallel with 2 threads, size 125
+Computing heat-distribution for room size 125X125 for T=1250 timesteps
+Verification: OK
+Elapsed time: 0.053673 seconds
+----------------------------------------------
+
+Benchmarking parallel with 4 threads, size 125
+Computing heat-distribution for room size 125X125 for T=1250 timesteps
+Verification: OK
+Elapsed time: 0.030352 seconds
+----------------------------------------------
+
+Benchmarking parallel with 8 threads, size 125
+Computing heat-distribution for room size 125X125 for T=1250 timesteps
+Verification: OK
+Elapsed time: 0.019109 seconds
+----------------------------------------------
+
+Benchmarking parallel with 12 threads, size 125
+Computing heat-distribution for room size 125X125 for T=1250 timesteps
+Verification: OK
+Elapsed time: 0.021199 seconds
+----------------------------------------------
+
+Benchmarking sequential with size 250:
+Computing heat-distribution for room size 250X250 for T=2500 timesteps
+Verification: OK
+Elapsed time: 0.673094 seconds
+----------------------------------------------
+
+Benchmarking parallel with 1 threads, size 250
+Computing heat-distribution for room size 250X250 for T=2500 timesteps
+Verification: OK
+Elapsed time: 0.877507 seconds
+----------------------------------------------
+
+Benchmarking parallel with 2 threads, size 250
+Computing heat-distribution for room size 250X250 for T=2500 timesteps
+Verification: OK
+Elapsed time: 0.445015 seconds
+----------------------------------------------
+
+Benchmarking parallel with 4 threads, size 250
+Computing heat-distribution for room size 250X250 for T=2500 timesteps
+Verification: OK
+Elapsed time: 0.230918 seconds
+----------------------------------------------
+
+Benchmarking parallel with 8 threads, size 250
+Computing heat-distribution for room size 250X250 for T=2500 timesteps
+Verification: OK
+Elapsed time: 0.123333 seconds
+----------------------------------------------
+
+Benchmarking parallel with 12 threads, size 250
+Computing heat-distribution for room size 250X250 for T=2500 timesteps
+Verification: OK
+Elapsed time: 0.145078 seconds
+----------------------------------------------
+
+Benchmarking sequential with size 500:
+Computing heat-distribution for room size 500X500 for T=5000 timesteps
+Verification: OK
+Elapsed time: 5.441002 seconds
+----------------------------------------------
+
+Benchmarking parallel with 1 threads, size 500
+Computing heat-distribution for room size 500X500 for T=5000 timesteps
+Verification: OK
+Elapsed time: 7.003008 seconds
+----------------------------------------------
+
+Benchmarking parallel with 2 threads, size 500
+Computing heat-distribution for room size 500X500 for T=5000 timesteps
+Verification: OK
+Elapsed time: 3.509375 seconds
+----------------------------------------------
+
+Benchmarking parallel with 4 threads, size 500
+Computing heat-distribution for room size 500X500 for T=5000 timesteps
+Verification: OK
+Elapsed time: 1.791540 seconds
+----------------------------------------------
+
+Benchmarking parallel with 8 threads, size 500
+Computing heat-distribution for room size 500X500 for T=5000 timesteps
+Verification: OK
+Elapsed time: 0.939657 seconds
+----------------------------------------------
+
+Benchmarking parallel with 12 threads, size 500
+Computing heat-distribution for room size 500X500 for T=5000 timesteps
+Verification: OK
+Elapsed time: 0.728203 seconds
+----------------------------------------------
+

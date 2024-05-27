@@ -50,36 +50,59 @@ int main(int argc, char **argv) {
     int source_x = N / 4;
     int source_y = N / 4;
     A[IND(source_x,source_y)] = 273 + 60;
-
+	/*
     printf("Initial:");
     printTemperature(A, N, N);
     printf("\n");
-
+*/
     // ---------- compute ----------
 
     // create a second buffer for the computation
     double *B = malloc(sizeof(double) * N * N);
     if(!B) PERROR_GOTO(error_b);
-    // for each time step ..
-    for (int t = 0; t < T; t++) {
-        // todo implement heat propagation
-        // todo make sure the heat source stays the same
 
-        // every 1000 steps show intermediate step
-        if (!(t % 1000)) {
-            printf("Step t=%d\n", t);
-            printTemperature(A, N, N);
-            printf("\n");
-        }
-    }
+	double start_time = omp_get_wtime();
 
+	// for each time step ..
+	for (int t = 0; t < T; t++) {
+#pragma omp parallel for collapse(2)
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < N; j++) {
+				if (i == source_x && j == source_y) {
+					B[IND(i, j)] = A[IND(i, j)]; // Ensure the heat source stays the same
+				} else {
+					double t_up = (i > 0) ? A[IND(i - 1, j)] : A[IND(i, j)];
+					double t_down = (i < N - 1) ? A[IND(i + 1, j)] : A[IND(i, j)];
+					double t_left = (j > 0) ? A[IND(i, j - 1)] : A[IND(i, j)];
+					double t_right = (j < N - 1) ? A[IND(i, j + 1)] : A[IND(i, j)];
+
+					B[IND(i, j)] = 0.25 * (t_up + t_down + t_left + t_right);
+				}
+			}
+		}
+
+		// Swap the buffers
+		double *temp = A;
+		A = B;
+		B = temp;
+
+		// every 1000 steps show intermediate step
+		/*
+		if (!(t % 1000)) {
+			printf("Step t=%d\n", t);
+			printTemperature(A, N, N);
+			printf("\n");
+		}
+		 */
+	}
+	double end_time = omp_get_wtime();
 
     // ---------- check ----------
-
+/*
     printf("Final:");
     printTemperature(A, N, N);
     printf("\n");
-
+*/
     // simple verification if nowhere the heat is more then the heat source
     int success = 1;
     for (long long i = 0; i < N; i++) {
@@ -93,6 +116,7 @@ int main(int argc, char **argv) {
     }
 
     printf("Verification: %s\n", (success) ? "OK" : "FAILED");
+	printf("Elapsed time: %f seconds\n", end_time - start_time);
 
     // todo ---------- cleanup ----------
     error_b:
