@@ -15,14 +15,11 @@
 make clean
 make
 
-N=(5 9 10 11 12)
+N=(12 12 12 12 12 12 12)
 
 
 for SIZE in ${N[*]};
 do
-  echo "Computing sequential N: $SIZE"
-  ./sequential "$SIZE"
-  echo ""
   echo "Computing parallel N: $SIZE"
   ./parallel "$SIZE"
   echo ""

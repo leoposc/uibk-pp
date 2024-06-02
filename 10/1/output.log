@@ -1,38 +1,77 @@
-rm -f sequential parallel
-gcc -std=c99 -Wall -O1 -fopenmp -o sequential sequential.c
-gcc -std=c99 -Wall -O1 -fopenmp -o parallel parallel.c
 Computing sequential N: 5
 Elapsed time: 0.000008 seconds
 Result: 1683
 Computing parallel N: 5
-Elapsed time: 0.001119 seconds
+Elapsed time: 0.003733 seconds
 Result: 1683
 
+Computing sequential N: 6
+Elapsed time: 0.000039 seconds
+Result: 8989
+Computing parallel N: 6
+Elapsed time: 0.002985 seconds
+Result: 8989
+
+Computing sequential N: 7
+Elapsed time: 0.000207 seconds
+Result: 48639
+Computing parallel N: 7
+Elapsed time: 0.003493 seconds
+Result: 48639
+
+Computing sequential N: 8
+Elapsed time: 0.001137 seconds
+Result: 265729
+Computing parallel N: 8
+Elapsed time: 0.001167 seconds
+Result: 265729
+
 Computing sequential N: 9
-Elapsed time: 0.006269 seconds
+Elapsed time: 0.006283 seconds
 Result: 1462563
 Computing parallel N: 9
-Elapsed time: 0.003146 seconds
+Elapsed time: 0.001748 seconds
 Result: 1462563
 
 Computing sequential N: 10
-Elapsed time: 0.034701 seconds
+Elapsed time: 0.034635 seconds
 Result: 8097453
 Computing parallel N: 10
-Elapsed time: 0.004773 seconds
+Elapsed time: 0.007707 seconds
 Result: 8097453
 
 Computing sequential N: 11
-Elapsed time: 0.190895 seconds
+Elapsed time: 0.190891 seconds
 Result: 45046719
 Computing parallel N: 11
-Elapsed time: 0.022595 seconds
+Elapsed time: 0.020532 seconds
 Result: 45046719
 
 Computing sequential N: 12
-Elapsed time: 1.068707 seconds
+Elapsed time: 1.063763 seconds
 Result: 251595969
 Computing parallel N: 12
-Elapsed time: 0.105579 seconds
+Elapsed time: 0.100087 seconds
 Result: 251595969
+
+Computing sequential N: 13
+Elapsed time: 5.956524 seconds
+Result: 1409933619
+Computing parallel N: 13
+Elapsed time: 0.525871 seconds
+Result: 1409933619
+
+Computing sequential N: 14
+Elapsed time: 33.573178 seconds
+Result: -666086339
+Computing parallel N: 14
+Elapsed time: 2.792128 seconds
+Result: -666086339
+
+Computing sequential N: 15
+Elapsed time: 189.178032 seconds
+Result: 1692708863
+Computing parallel N: 15
+Elapsed time: 15.392602 seconds
+Result: 1692708863
 

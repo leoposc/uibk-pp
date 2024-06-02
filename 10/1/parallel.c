@@ -18,7 +18,7 @@ int D(int m, int n) {
 #pragma omp task shared(b)
 		b = D(m - 1, n - 1);
 
-#pragma omp task shared(c)
+//#pragma omp task shared(c)
 		c = D(m, n - 1);
 
 #pragma omp taskwait
