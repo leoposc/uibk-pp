@@ -162,76 +162,22 @@ void g_solution(double a[BLOCK_SIZE][BLOCK_SIZE], double b[BLOCK_SIZE][BLOCK_SIZ
 
 int main() {
 
-	int va[N], vb[N], vc[N];
-	int ca[N], cb[N], cc[N];
-	double da[N];
-	double cda[N];
-	double ga[BLOCK_SIZE][BLOCK_SIZE], gb[BLOCK_SIZE][BLOCK_SIZE], gc[BLOCK_SIZE][BLOCK_SIZE];
-	double cga[BLOCK_SIZE][BLOCK_SIZE], cgb[BLOCK_SIZE][BLOCK_SIZE], cgc[BLOCK_SIZE][BLOCK_SIZE];
+	int va[N], vb[N];
 
 	for(int i = 0; i < N; i++) {
 		va[i] = i;
 		vb[i] = i;
-		vc[i] = i;
-		ca[i] = i;
-		cb[i] = i;
-		cc[i] = i;
-		da[i] = i;
-		cda[i] = i;
-	}
-
-	for(int i = 0; i < BLOCK_SIZE; i++) {
-		for(int j = 0; j < BLOCK_SIZE; j++) {
-			ga[i][j] = i + j;
-			gb[i][j] = i + j;
-			gc[i][j] = 0;
-			cga[i][j] = i + j;
-			cgb[i][j] = i + j;
-			cgc[i][j] = 0;
-		}
 	}
 
 	a(va, vb);
-	a_solution(ca, cb);
-
-	b(da);
-	b_solution(cda);
-
-	c(va, vb, vc);
-	c_solution(ca, cb, cc);
-
-	d(va, vb, vc);
-	d_solution(ca, cb, cc);
-
-	e(va);
-	e_solution(ca);
-
-	f(va, vb, vc);
-	f_solution(ca, cb, cc);
-
-	g(ga, gb, gc);
-	g_solution(cga, cgb, cgc);
-
+	
 	int sum = 0;
-	int sum_control = 0;
-	double sum_d = 0;
-	double sum_d_control = 0;
+	
 	for(int i = 0; i < N; i++) {
 		sum += va[i];
 		sum += vb[i];
-		sum += vc[i];
-		sum_control += ca[i];
-		sum_control += cb[i];
-		sum_control += cc[i];
-
-		sum_d += da[i];
-		sum_d_control += cda[i];
 	}
 
 	printf("sum: %d\n", sum);
-	printf("sum_control: %d\n", sum_control);
-	printf("sum_d: %f\n", sum_d);
-	printf("sum_d_control: %f\n", sum_d_control);
-
 	return 0;
 }

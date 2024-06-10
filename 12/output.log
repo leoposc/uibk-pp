@@ -1,0 +1,38 @@
+sum_a: 50034996
+sum_b: 49985001
+sum_c: 49985001
+sum_a: 50034996
+sum_b: 49985001
+sum_c: 49985001
+min: 5
+sum: 50034996
+min: 5
+sum: 50034996
+sum: 149999999
+sum_control: 149999998
+sum_d: 24992500.500000
+sum_d_control: 24992500.500000
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.007 MB perf.data (146 samples) ]
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 146  of event 'cycles:u'
+# Event count (approx.): 95386065
+#
+# Overhead  Command  Shared Object     Symbol                  
+# ........  .......  ................  ........................
+#
+    94.71%  a.out    a.out             [.] g_solution
+     2.29%  a.out    [unknown]         [k] 0xffffffffb8e00b87
+     1.77%  a.out    a.out             [.] main
+     0.65%  a.out    ld-2.28.so        [.] check_match
+     0.40%  a.out    ld-2.28.so        [.] search_cache
+     0.18%  a.out    ld-2.28.so        [.] __GI___tunables_init
+
+
+#
+# (Tip: System-wide collection from all CPUs: perf record -a)
+#

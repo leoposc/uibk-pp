@@ -506,6 +506,143 @@ for (int i = 0; i < N; ++i) {
 }
 ```
 
+```
+
+ Performance counter stats for './a -e cache-misses,cache-references,instructions,cycles':
+
+              0.60 msec task-clock:u              #    0.185 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+                65      page-faults:u             #  108.286 K/sec                  
+           574,485      cycles:u                  #    0.957 GHz                      (55.84%)
+         1,456,276      stalled-cycles-frontend:u #  253.49% frontend cycles idle   
+         1,266,145      stalled-cycles-backend:u  #  220.40% backend cycles idle    
+           673,669      instructions:u            #    1.17  insn per cycle         
+                                                  #    2.16  stalled cycles per insn
+            83,980      branches:u                #  139.905 M/sec                  
+             5,546      branch-misses:u           #    6.60% of all branches          (44.16%)
+
+       0.003247312 seconds time elapsed
+
+       0.000311000 seconds user
+       0.000979000 seconds sys
+
+
+
+ Performance counter stats for './a_optimized -e cache-misses,cache-references,instructions,cycles':
+
+              0.59 msec task-clock:u              #    0.267 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+                67      page-faults:u             #  114.225 K/sec                  
+           690,909      cycles:u                  #    1.178 GHz                    
+         1,396,038      stalled-cycles-frontend:u #  202.06% frontend cycles idle   
+         1,290,814      stalled-cycles-backend:u  #  186.83% backend cycles idle    
+           668,654      instructions:u            #    0.97  insn per cycle         
+                                                  #    2.09  stalled cycles per insn
+            78,991      branches:u                #  134.668 M/sec                  
+     <not counted>      branch-misses:u                                               (0.00%)
+
+       0.002197408 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001261000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+
+ Performance counter stats for './b -e cache-misses,cache-references,instructions,cycles':
+
+              0.59 msec task-clock:u              #    0.241 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+                65      page-faults:u             #  109.753 K/sec                  
+           428,696      cycles:u                  #    0.724 GHz                      (37.27%)
+         1,460,984      stalled-cycles-frontend:u #  340.80% frontend cycles idle   
+         1,296,857      stalled-cycles-backend:u  #  302.51% backend cycles idle    
+           556,390      instructions:u            #    1.30  insn per cycle         
+                                                  #    2.63  stalled cycles per insn
+            84,538      branches:u                #  142.743 M/sec                  
+             5,080      branch-misses:u           #    6.01% of all branches          (62.73%)
+
+       0.002454617 seconds time elapsed
+
+       0.000167000 seconds user
+       0.001110000 seconds sys
+
+
+
+ Performance counter stats for './b_optimized -e cache-misses,cache-references,instructions,cycles':
+
+              0.58 msec task-clock:u              #    0.242 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+                67      page-faults:u             #  116.341 K/sec                  
+           681,691      cycles:u                  #    1.184 GHz                    
+         1,445,876      stalled-cycles-frontend:u #  212.10% frontend cycles idle   
+         1,235,585      stalled-cycles-backend:u  #  181.25% backend cycles idle    
+           546,435      instructions:u            #    0.80  insn per cycle         
+                                                  #    2.65  stalled cycles per insn
+            84,548      branches:u                #  146.811 M/sec                  
+     <not counted>      branch-misses:u                                               (0.00%)
+
+       0.002380459 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001273000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+
+ Performance counter stats for './c -e cache-misses,cache-references,instructions,cycles':
+
+              0.63 msec task-clock:u              #    0.281 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+                73      page-faults:u             #  115.652 K/sec                  
+                 0      cycles:u                  #    0.000 GHz                      (5.32%)
+         1,531,379      stalled-cycles-frontend:u                                   
+         1,312,188      stalled-cycles-backend:u  #    0.00% backend cycles idle    
+           683,643      instructions:u                                              
+                                                  #    2.24  stalled cycles per insn
+            83,989      branches:u                #  133.062 M/sec                  
+             4,810      branch-misses:u           #    5.73% of all branches          (94.68%)
+
+       0.002249030 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001264000 seconds sys
+
+
+
+ Performance counter stats for './c_optimized -e cache-misses,cache-references,instructions,cycles':
+
+              0.67 msec task-clock:u              #    0.282 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+                74      page-faults:u             #  110.206 K/sec                  
+           663,113      cycles:u                  #    0.988 GHz                      (49.86%)
+         1,626,258      stalled-cycles-frontend:u #  245.25% frontend cycles idle   
+         1,463,616      stalled-cycles-backend:u  #  220.72% backend cycles idle    
+           773,696      instructions:u            #    1.17  insn per cycle         
+                                                  #    2.10  stalled cycles per insn
+            83,999      branches:u                #  125.098 M/sec                  
+             4,879      branch-misses:u           #    5.81% of all branches          (50.14%)
+
+       0.002381025 seconds time elapsed
+
+       0.000308000 seconds user
+       0.001058000 seconds sys
+
+````
+
+
 ## General Notes
 
 All the material required by the tasks above (e.g., code, figures, text, etc...) must be part of the solution that is handed in. Your experiments should be reproducible and comparable to your measurements using the solution materials that you hand in.
